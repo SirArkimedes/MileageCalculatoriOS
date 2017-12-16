@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		492FEC7D1FE4EC040039A4EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FEC7C1FE4EC040039A4EA /* AppDelegate.swift */; };
+		492FEC7F1FE4EC040039A4EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FEC7E1FE4EC040039A4EA /* ViewController.swift */; };
+		492FEC821FE4EC040039A4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC801FE4EC040039A4EA /* Main.storyboard */; };
+		492FEC841FE4EC040039A4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC831FE4EC040039A4EA /* Assets.xcassets */; };
+		492FEC871FE4EC040039A4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC851FE4EC040039A4EA /* LaunchScreen.storyboard */; };
+		492FEC921FE4EC040039A4EA /* MileageCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FEC911FE4EC040039A4EA /* MileageCalculatorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		492FEC8E1FE4EC040039A4EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492FEC711FE4EC040039A4EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 492FEC781FE4EC040039A4EA;
+			remoteInfo = MileageCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		492FEC791FE4EC040039A4EA /* MileageCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MileageCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		492FEC7C1FE4EC040039A4EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		492FEC7E1FE4EC040039A4EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		492FEC811FE4EC040039A4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		492FEC831FE4EC040039A4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		492FEC861FE4EC040039A4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		492FEC881FE4EC040039A4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492FEC8D1FE4EC040039A4EA /* MileageCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MileageCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		492FEC911FE4EC040039A4EA /* MileageCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileageCalculatorTests.swift; sourceTree = "<group>"; };
+		492FEC931FE4EC040039A4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		492FEC761FE4EC040039A4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FEC8A1FE4EC040039A4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		492FEC701FE4EC040039A4EA = {
+			isa = PBXGroup;
+			children = (
+				492FEC7B1FE4EC040039A4EA /* MileageCalculator */,
+				492FEC901FE4EC040039A4EA /* MileageCalculatorTests */,
+				492FEC7A1FE4EC040039A4EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		492FEC7A1FE4EC040039A4EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				492FEC791FE4EC040039A4EA /* MileageCalculator.app */,
+				492FEC8D1FE4EC040039A4EA /* MileageCalculatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		492FEC7B1FE4EC040039A4EA /* MileageCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				492FEC7C1FE4EC040039A4EA /* AppDelegate.swift */,
+				492FEC7E1FE4EC040039A4EA /* ViewController.swift */,
+				492FEC801FE4EC040039A4EA /* Main.storyboard */,
+				492FEC831FE4EC040039A4EA /* Assets.xcassets */,
+				492FEC851FE4EC040039A4EA /* LaunchScreen.storyboard */,
+				492FEC881FE4EC040039A4EA /* Info.plist */,
+			);
+			path = MileageCalculator;
+			sourceTree = "<group>";
+		};
+		492FEC901FE4EC040039A4EA /* MileageCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				492FEC911FE4EC040039A4EA /* MileageCalculatorTests.swift */,
+				492FEC931FE4EC040039A4EA /* Info.plist */,
+			);
+			path = MileageCalculatorTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		492FEC781FE4EC040039A4EA /* MileageCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492FEC961FE4EC040039A4EA /* Build configuration list for PBXNativeTarget "MileageCalculator" */;
+			buildPhases = (
+				492FEC751FE4EC040039A4EA /* Sources */,
+				492FEC761FE4EC040039A4EA /* Frameworks */,
+				492FEC771FE4EC040039A4EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MileageCalculator;
+			productName = MileageCalculator;
+			productReference = 492FEC791FE4EC040039A4EA /* MileageCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		492FEC8C1FE4EC040039A4EA /* MileageCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492FEC991FE4EC040039A4EA /* Build configuration list for PBXNativeTarget "MileageCalculatorTests" */;
+			buildPhases = (
+				492FEC891FE4EC040039A4EA /* Sources */,
+				492FEC8A1FE4EC040039A4EA /* Frameworks */,
+				492FEC8B1FE4EC040039A4EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				492FEC8F1FE4EC040039A4EA /* PBXTargetDependency */,
+			);
+			name = MileageCalculatorTests;
+			productName = MileageCalculatorTests;
+			productReference = 492FEC8D1FE4EC040039A4EA /* MileageCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		492FEC711FE4EC040039A4EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Andrew Robinson";
+				TargetAttributes = {
+					492FEC781FE4EC040039A4EA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					492FEC8C1FE4EC040039A4EA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 492FEC781FE4EC040039A4EA;
+					};
+				};
+			};
+			buildConfigurationList = 492FEC741FE4EC040039A4EA /* Build configuration list for PBXProject "MileageCalculator" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 492FEC701FE4EC040039A4EA;
+			productRefGroup = 492FEC7A1FE4EC040039A4EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				492FEC781FE4EC040039A4EA /* MileageCalculator */,
+				492FEC8C1FE4EC040039A4EA /* MileageCalculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		492FEC771FE4EC040039A4EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492FEC871FE4EC040039A4EA /* LaunchScreen.storyboard in Resources */,
+				492FEC841FE4EC040039A4EA /* Assets.xcassets in Resources */,
+				492FEC821FE4EC040039A4EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FEC8B1FE4EC040039A4EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		492FEC751FE4EC040039A4EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492FEC7F1FE4EC040039A4EA /* ViewController.swift in Sources */,
+				492FEC7D1FE4EC040039A4EA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FEC891FE4EC040039A4EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492FEC921FE4EC040039A4EA /* MileageCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		492FEC8F1FE4EC040039A4EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 492FEC781FE4EC040039A4EA /* MileageCalculator */;
+			targetProxy = 492FEC8E1FE4EC040039A4EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		492FEC801FE4EC040039A4EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492FEC811FE4EC040039A4EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		492FEC851FE4EC040039A4EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492FEC861FE4EC040039A4EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		492FEC941FE4EC040039A4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		492FEC951FE4EC040039A4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		492FEC971FE4EC040039A4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP73CTVZZ8;
+				INFOPLIST_FILE = MileageCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.andrewrobinson.MileageCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		492FEC981FE4EC040039A4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP73CTVZZ8;
+				INFOPLIST_FILE = MileageCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.andrewrobinson.MileageCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		492FEC9A1FE4EC040039A4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP73CTVZZ8;
+				INFOPLIST_FILE = MileageCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.andrewrobinson.MileageCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MileageCalculator.app/MileageCalculator";
+			};
+			name = Debug;
+		};
+		492FEC9B1FE4EC040039A4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZP73CTVZZ8;
+				INFOPLIST_FILE = MileageCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.andrewrobinson.MileageCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MileageCalculator.app/MileageCalculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		492FEC741FE4EC040039A4EA /* Build configuration list for PBXProject "MileageCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492FEC941FE4EC040039A4EA /* Debug */,
+				492FEC951FE4EC040039A4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492FEC961FE4EC040039A4EA /* Build configuration list for PBXNativeTarget "MileageCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492FEC971FE4EC040039A4EA /* Debug */,
+				492FEC981FE4EC040039A4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492FEC991FE4EC040039A4EA /* Build configuration list for PBXNativeTarget "MileageCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492FEC9A1FE4EC040039A4EA /* Debug */,
+				492FEC9B1FE4EC040039A4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 492FEC711FE4EC040039A4EA /* Project object */;
+}
