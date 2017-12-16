@@ -34,16 +34,72 @@
                                     <action selector="goButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0NX-gb-8Vo"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DFs-cU-R2D">
+                                <rect key="frame" x="0.0" y="54" width="375" height="613"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="locationCell" rowHeight="88" id="rwQ-ie-m5Y" customClass="LocationTableViewCell" customModule="MileageCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rwQ-ie-m5Y" id="0az-s9-THY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uA3-rM-rno">
+                                                    <rect key="frame" x="15" y="28" width="69" height="32.5"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09R-Rt-4mb">
+                                                    <rect key="frame" x="292.5" y="33" width="67.5" height="22"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="09R-Rt-4mb" firstAttribute="centerY" secondItem="0az-s9-THY" secondAttribute="centerY" id="H97-nG-NR6"/>
+                                                <constraint firstItem="uA3-rM-rno" firstAttribute="centerY" secondItem="0az-s9-THY" secondAttribute="centerY" id="Ht4-yw-yvB"/>
+                                                <constraint firstAttribute="trailing" secondItem="09R-Rt-4mb" secondAttribute="trailing" constant="15" id="Xbo-pD-KQb"/>
+                                                <constraint firstItem="09R-Rt-4mb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uA3-rM-rno" secondAttribute="trailing" constant="8" id="nY1-sf-Q4h"/>
+                                                <constraint firstItem="uA3-rM-rno" firstAttribute="leading" secondItem="0az-s9-THY" secondAttribute="leading" constant="15" id="vxE-m6-2ij"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="distanceLabel" destination="09R-Rt-4mb" id="lAJ-yX-0dF"/>
+                                            <outlet property="nameLabel" destination="uA3-rM-rno" id="byP-dm-aaY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd2-Aj-e8z" userLabel="infoVIew">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="hsL-4k-3JO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DFs-cU-R2D" secondAttribute="bottom" id="EBk-h7-7HF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dd2-Aj-e8z" secondAttribute="trailing" id="Ksz-fg-VOX"/>
+                            <constraint firstItem="dd2-Aj-e8z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MQK-DN-mbi"/>
                             <constraint firstItem="Dnb-MQ-D4B" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NND-Rh-gUg"/>
+                            <constraint firstItem="DFs-cU-R2D" firstAttribute="top" secondItem="dd2-Aj-e8z" secondAttribute="bottom" id="TKj-GP-Ulu"/>
+                            <constraint firstItem="DFs-cU-R2D" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="k56-9J-LEE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="dd2-Aj-e8z" secondAttribute="top" constant="20" id="mCC-W6-Jbc"/>
+                            <constraint firstItem="DFs-cU-R2D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s5Y-wB-Vzn"/>
                             <constraint firstItem="Dnb-MQ-D4B" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xtp-DI-ym5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="goButton" destination="Dnb-MQ-D4B" id="RzN-cx-A3x"/>
+                        <outlet property="tableView" destination="DFs-cU-R2D" id="HKP-Za-Qtf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

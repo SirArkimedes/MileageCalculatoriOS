@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492806CA1FE5B66200F1682E /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492806C91FE5B66200F1682E /* LocationTableViewCell.swift */; };
 		492FEC7D1FE4EC040039A4EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FEC7C1FE4EC040039A4EA /* AppDelegate.swift */; };
 		492FEC821FE4EC040039A4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC801FE4EC040039A4EA /* Main.storyboard */; };
 		492FEC841FE4EC040039A4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC831FE4EC040039A4EA /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		03035CBA35D846454DA9A750 /* Pods_MileageCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MileageCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		492806C91FE5B66200F1682E /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		492FEC791FE4EC040039A4EA /* MileageCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MileageCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		492FEC7C1FE4EC040039A4EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		492FEC811FE4EC040039A4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +76,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		492806C61FE5B53E00F1682E /* Models and Managers */ = {
+			isa = PBXGroup;
+			children = (
+				492FECA21FE4F6FE0039A4EA /* Location.swift */,
+				492FECA81FE50D6B0039A4EA /* LocationManager.swift */,
+			);
+			path = "Models and Managers";
+			sourceTree = "<group>";
+		};
+		492806C71FE5B5E700F1682E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				492FECA61FE505770039A4EA /* UIView+RoundedCorners.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		492806C81FE5B5FC00F1682E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				492806C91FE5B66200F1682E /* LocationTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		492FEC701FE4EC040039A4EA = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +124,9 @@
 		492FEC7B1FE4EC040039A4EA /* MileageCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				492FECA81FE50D6B0039A4EA /* LocationManager.swift */,
-				492FECA61FE505770039A4EA /* UIView+RoundedCorners.swift */,
-				492FECA21FE4F6FE0039A4EA /* Location.swift */,
+				492806C81FE5B5FC00F1682E /* Cells */,
+				492806C71FE5B5E700F1682E /* Extensions */,
+				492806C61FE5B53E00F1682E /* Models and Managers */,
 				492FEC7C1FE4EC040039A4EA /* AppDelegate.swift */,
 				492FEC801FE4EC040039A4EA /* Main.storyboard */,
 				492FECA41FE5048F0039A4EA /* MainViewController.swift */,
@@ -370,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492806CA1FE5B66200F1682E /* LocationTableViewCell.swift in Sources */,
 				492FECA51FE5048F0039A4EA /* MainViewController.swift in Sources */,
 				492FECA31FE4F6FE0039A4EA /* Location.swift in Sources */,
 				492FECA91FE50D6B0039A4EA /* LocationManager.swift in Sources */,
