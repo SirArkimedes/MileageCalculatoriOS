@@ -13,6 +13,7 @@
 		492FEC841FE4EC040039A4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC831FE4EC040039A4EA /* Assets.xcassets */; };
 		492FEC871FE4EC040039A4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC851FE4EC040039A4EA /* LaunchScreen.storyboard */; };
 		492FEC921FE4EC040039A4EA /* MileageCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FEC911FE4EC040039A4EA /* MileageCalculatorTests.swift */; };
+		492FEC9F1FE4EF450039A4EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC9E1FE4EF450039A4EA /* GoogleService-Info.plist */; };
 		DD0C055A4D3F7A4F7A1ACB19 /* Pods_MileageCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03035CBA35D846454DA9A750 /* Pods_MileageCalculator.framework */; };
 		E7B65D044591767D28359FB8 /* Pods_MileageCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789939991BF845D0087C2F73 /* Pods_MileageCalculatorTests.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		492FEC8D1FE4EC040039A4EA /* MileageCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MileageCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		492FEC911FE4EC040039A4EA /* MileageCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileageCalculatorTests.swift; sourceTree = "<group>"; };
 		492FEC931FE4EC040039A4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492FEC9E1FE4EF450039A4EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4940EAF0208CB65BAD771CBA /* Pods-MileageCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculatorTests/Pods-MileageCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		53FF1E6655294765BFAA1721 /* Pods-MileageCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		70384939CF60EABB44F32A34 /* Pods-MileageCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				492FEC831FE4EC040039A4EA /* Assets.xcassets */,
 				492FEC851FE4EC040039A4EA /* LaunchScreen.storyboard */,
 				492FEC881FE4EC040039A4EA /* Info.plist */,
+				492FEC9E1FE4EF450039A4EA /* GoogleService-Info.plist */,
 			);
 			path = MileageCalculator;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				492FEC871FE4EC040039A4EA /* LaunchScreen.storyboard in Resources */,
+				492FEC9F1FE4EF450039A4EA /* GoogleService-Info.plist in Resources */,
 				492FEC841FE4EC040039A4EA /* Assets.xcassets in Resources */,
 				492FEC821FE4EC040039A4EA /* Main.storyboard in Resources */,
 			);
