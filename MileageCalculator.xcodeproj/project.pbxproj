@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		492FEC7D1FE4EC040039A4EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FEC7C1FE4EC040039A4EA /* AppDelegate.swift */; };
-		492FEC7F1FE4EC040039A4EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FEC7E1FE4EC040039A4EA /* ViewController.swift */; };
 		492FEC821FE4EC040039A4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC801FE4EC040039A4EA /* Main.storyboard */; };
 		492FEC841FE4EC040039A4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC831FE4EC040039A4EA /* Assets.xcassets */; };
 		492FEC871FE4EC040039A4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC851FE4EC040039A4EA /* LaunchScreen.storyboard */; };
 		492FEC921FE4EC040039A4EA /* MileageCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FEC911FE4EC040039A4EA /* MileageCalculatorTests.swift */; };
 		492FEC9F1FE4EF450039A4EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC9E1FE4EF450039A4EA /* GoogleService-Info.plist */; };
+		492FECA31FE4F6FE0039A4EA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FECA21FE4F6FE0039A4EA /* Location.swift */; };
+		492FECA51FE5048F0039A4EA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FECA41FE5048F0039A4EA /* MainViewController.swift */; };
+		492FECA71FE505770039A4EA /* UIView+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FECA61FE505770039A4EA /* UIView+RoundedCorners.swift */; };
 		DD0C055A4D3F7A4F7A1ACB19 /* Pods_MileageCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03035CBA35D846454DA9A750 /* Pods_MileageCalculator.framework */; };
 		E7B65D044591767D28359FB8 /* Pods_MileageCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789939991BF845D0087C2F73 /* Pods_MileageCalculatorTests.framework */; };
 /* End PBXBuildFile section */
@@ -32,7 +34,6 @@
 		03035CBA35D846454DA9A750 /* Pods_MileageCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MileageCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		492FEC791FE4EC040039A4EA /* MileageCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MileageCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		492FEC7C1FE4EC040039A4EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		492FEC7E1FE4EC040039A4EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		492FEC811FE4EC040039A4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		492FEC831FE4EC040039A4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		492FEC861FE4EC040039A4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +42,9 @@
 		492FEC911FE4EC040039A4EA /* MileageCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileageCalculatorTests.swift; sourceTree = "<group>"; };
 		492FEC931FE4EC040039A4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492FEC9E1FE4EF450039A4EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		492FECA21FE4F6FE0039A4EA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		492FECA41FE5048F0039A4EA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		492FECA61FE505770039A4EA /* UIView+RoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedCorners.swift"; sourceTree = "<group>"; };
 		4940EAF0208CB65BAD771CBA /* Pods-MileageCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculatorTests/Pods-MileageCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		53FF1E6655294765BFAA1721 /* Pods-MileageCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		70384939CF60EABB44F32A34 /* Pods-MileageCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,9 +95,11 @@
 		492FEC7B1FE4EC040039A4EA /* MileageCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				492FECA61FE505770039A4EA /* UIView+RoundedCorners.swift */,
+				492FECA21FE4F6FE0039A4EA /* Location.swift */,
 				492FEC7C1FE4EC040039A4EA /* AppDelegate.swift */,
-				492FEC7E1FE4EC040039A4EA /* ViewController.swift */,
 				492FEC801FE4EC040039A4EA /* Main.storyboard */,
+				492FECA41FE5048F0039A4EA /* MainViewController.swift */,
 				492FEC831FE4EC040039A4EA /* Assets.xcassets */,
 				492FEC851FE4EC040039A4EA /* LaunchScreen.storyboard */,
 				492FEC881FE4EC040039A4EA /* Info.plist */,
@@ -361,8 +367,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492FEC7F1FE4EC040039A4EA /* ViewController.swift in Sources */,
+				492FECA51FE5048F0039A4EA /* MainViewController.swift in Sources */,
+				492FECA31FE4F6FE0039A4EA /* Location.swift in Sources */,
 				492FEC7D1FE4EC040039A4EA /* AppDelegate.swift in Sources */,
+				492FECA71FE505770039A4EA /* UIView+RoundedCorners.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
