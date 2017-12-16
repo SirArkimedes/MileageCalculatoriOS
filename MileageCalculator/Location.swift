@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import CoreLocation
 
 class Location {
     static let root = "Locations"
@@ -19,6 +20,7 @@ class Location {
     var name = ""
     var lat: Double = 0.0
     var lon: Double = 0.0
+    var location: CLLocation?
 
     private var distances = [String: Double]()
 
@@ -28,6 +30,8 @@ class Location {
         if let n = dict[Location.name] as? String { name = n }
         if let la = dict[Location.lat] as? Double { lat = la }
         if let lo = dict[Location.lon] as? Double { lon = lo }
+
+        location = CLLocation(latitude: lat, longitude: lon)
 
         for (key, value) in dict {
             if key != Location.name && key != Location.lat && key != Location.lon {

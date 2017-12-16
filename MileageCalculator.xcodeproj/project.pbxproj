@@ -16,6 +16,7 @@
 		492FECA31FE4F6FE0039A4EA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FECA21FE4F6FE0039A4EA /* Location.swift */; };
 		492FECA51FE5048F0039A4EA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FECA41FE5048F0039A4EA /* MainViewController.swift */; };
 		492FECA71FE505770039A4EA /* UIView+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FECA61FE505770039A4EA /* UIView+RoundedCorners.swift */; };
+		492FECA91FE50D6B0039A4EA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FECA81FE50D6B0039A4EA /* LocationManager.swift */; };
 		DD0C055A4D3F7A4F7A1ACB19 /* Pods_MileageCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03035CBA35D846454DA9A750 /* Pods_MileageCalculator.framework */; };
 		E7B65D044591767D28359FB8 /* Pods_MileageCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789939991BF845D0087C2F73 /* Pods_MileageCalculatorTests.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		492FECA21FE4F6FE0039A4EA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		492FECA41FE5048F0039A4EA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		492FECA61FE505770039A4EA /* UIView+RoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedCorners.swift"; sourceTree = "<group>"; };
+		492FECA81FE50D6B0039A4EA /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4940EAF0208CB65BAD771CBA /* Pods-MileageCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculatorTests/Pods-MileageCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		53FF1E6655294765BFAA1721 /* Pods-MileageCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		70384939CF60EABB44F32A34 /* Pods-MileageCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		492FEC7B1FE4EC040039A4EA /* MileageCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				492FECA81FE50D6B0039A4EA /* LocationManager.swift */,
 				492FECA61FE505770039A4EA /* UIView+RoundedCorners.swift */,
 				492FECA21FE4F6FE0039A4EA /* Location.swift */,
 				492FEC7C1FE4EC040039A4EA /* AppDelegate.swift */,
@@ -369,6 +372,7 @@
 			files = (
 				492FECA51FE5048F0039A4EA /* MainViewController.swift in Sources */,
 				492FECA31FE4F6FE0039A4EA /* Location.swift in Sources */,
+				492FECA91FE50D6B0039A4EA /* LocationManager.swift in Sources */,
 				492FEC7D1FE4EC040039A4EA /* AppDelegate.swift in Sources */,
 				492FECA71FE505770039A4EA /* UIView+RoundedCorners.swift in Sources */,
 			);

@@ -15,10 +15,12 @@ class MainViewController: UIViewController {
 
     private let green = #colorLiteral(red: 0.001873505418, green: 1, blue: 0, alpha: 1)
     private let red = #colorLiteral(red: 0.916154027, green: 0.1861021519, blue: 0, alpha: 1)
-
     private let back = #colorLiteral(red: 0.220161885, green: 0.2569702566, blue: 0.402913034, alpha: 1)
 
     private var locations = [Location]()
+    private var locationOrder = [Location]()
+
+    private var checkTimer: Timer?
 
     // MARK: - View lifecycle
 
@@ -44,5 +46,19 @@ class MainViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction func goButtonPressed(_ sender: UIButton) {
+        sender.backgroundColor = red
+        sender.setTitle("STOP", for: .normal)
+
+        LocationManager.manager.startGatheringAndRequestPermission()
+
+        checkTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true, block: { timer in
+            if let _ = LocationManager.manager.lastLocation {
+                for location in self.locations {
+                    if LocationManager.manager.compareToLastLocation(location: location.location) {
+                        self.locationOrder.append(location)
+                    }
+                }
+            }
+        })
     }
 }
