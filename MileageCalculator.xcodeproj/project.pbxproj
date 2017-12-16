@@ -224,6 +224,11 @@
 					492FEC781FE4EC040039A4EA = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					492FEC8C1FE4EC040039A4EA = {
 						CreatedOnToolsVersion = 9.2;

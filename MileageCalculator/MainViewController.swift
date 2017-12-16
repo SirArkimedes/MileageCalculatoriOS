@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import CoreLocation
 
 class MainViewController: UIViewController {
 
@@ -67,21 +68,10 @@ class MainViewController: UIViewController {
     @IBAction func goButtonPressed(_ sender: UIButton) {
         sender.isHidden = true
 
-        LocationManager.manager.startGatheringAndRequestPermission()
+        distanceLabel.text = "Searching..."
 
-        checkTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true, block: { timer in
-            if let _ = LocationManager.manager.lastLocation {
-                for location in self.locations {
-                    if LocationManager.manager.compareToLastLocation(location: location.location) {
-                        if self.locationOrder.last !== location {
-                            self.locationOrder.append(location)
-                            self.totalDistance += self.calculateDistance(from: self.locationOrder.count - 1)
-                            self.tableView.reloadData()
-                        }
-                    }
-                }
-            }
-        })
+        LocationManager.manager.startGatheringAndRequestPermission()
+        LocationManager.manager.add(asDelegate: self)
     }
 
     // MARK: - Helpers
@@ -92,6 +82,20 @@ class MainViewController: UIViewController {
         } else {
             let previousLocation = locationOrder[index - 1]
             return previousLocation.getDistance(from: locationOrder[index].key)
+        }
+    }
+}
+
+extension MainViewController: LocationDelegate {
+    func didUpdate(with location: CLLocation) {
+        for pLocation in locations {
+            if LocationManager.manager.compareToLastLocation(location: pLocation.location) {
+                if self.locationOrder.last !== pLocation {
+                    self.locationOrder.append(pLocation)
+                    self.totalDistance += self.calculateDistance(from: self.locationOrder.count - 1)
+                    self.tableView.reloadData()
+                }
+            }
         }
     }
 }
