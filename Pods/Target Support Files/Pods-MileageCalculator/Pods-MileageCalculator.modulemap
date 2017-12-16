@@ -1,0 +1,6 @@
+framework module Pods_MileageCalculator {
+  umbrella header "Pods-MileageCalculator-umbrella.h"
+
+  export *
+  module * { export * }
+}

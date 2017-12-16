@@ -13,6 +13,8 @@
 		492FEC841FE4EC040039A4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC831FE4EC040039A4EA /* Assets.xcassets */; };
 		492FEC871FE4EC040039A4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492FEC851FE4EC040039A4EA /* LaunchScreen.storyboard */; };
 		492FEC921FE4EC040039A4EA /* MileageCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FEC911FE4EC040039A4EA /* MileageCalculatorTests.swift */; };
+		DD0C055A4D3F7A4F7A1ACB19 /* Pods_MileageCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03035CBA35D846454DA9A750 /* Pods_MileageCalculator.framework */; };
+		E7B65D044591767D28359FB8 /* Pods_MileageCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789939991BF845D0087C2F73 /* Pods_MileageCalculatorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03035CBA35D846454DA9A750 /* Pods_MileageCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MileageCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		492FEC791FE4EC040039A4EA /* MileageCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MileageCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		492FEC7C1FE4EC040039A4EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		492FEC7E1FE4EC040039A4EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		492FEC8D1FE4EC040039A4EA /* MileageCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MileageCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		492FEC911FE4EC040039A4EA /* MileageCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileageCalculatorTests.swift; sourceTree = "<group>"; };
 		492FEC931FE4EC040039A4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4940EAF0208CB65BAD771CBA /* Pods-MileageCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculatorTests/Pods-MileageCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		53FF1E6655294765BFAA1721 /* Pods-MileageCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		70384939CF60EABB44F32A34 /* Pods-MileageCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		789939991BF845D0087C2F73 /* Pods_MileageCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MileageCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32EE04752828DBACE3B472A /* Pods-MileageCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculatorTests/Pods-MileageCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0C055A4D3F7A4F7A1ACB19 /* Pods_MileageCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B65D044591767D28359FB8 /* Pods_MileageCalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				492FEC7B1FE4EC040039A4EA /* MileageCalculator */,
 				492FEC901FE4EC040039A4EA /* MileageCalculatorTests */,
 				492FEC7A1FE4EC040039A4EA /* Products */,
+				FC8E0A825390A79996F098E1 /* Pods */,
+				CC2F286EB42B4CA41E28EAC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = MileageCalculatorTests;
 			sourceTree = "<group>";
 		};
+		CC2F286EB42B4CA41E28EAC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03035CBA35D846454DA9A750 /* Pods_MileageCalculator.framework */,
+				789939991BF845D0087C2F73 /* Pods_MileageCalculatorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC8E0A825390A79996F098E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70384939CF60EABB44F32A34 /* Pods-MileageCalculator.debug.xcconfig */,
+				53FF1E6655294765BFAA1721 /* Pods-MileageCalculator.release.xcconfig */,
+				D32EE04752828DBACE3B472A /* Pods-MileageCalculatorTests.debug.xcconfig */,
+				4940EAF0208CB65BAD771CBA /* Pods-MileageCalculatorTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 492FEC961FE4EC040039A4EA /* Build configuration list for PBXNativeTarget "MileageCalculator" */;
 			buildPhases = (
+				E08B74B9CE65D2D91C3C34A5 /* [CP] Check Pods Manifest.lock */,
 				492FEC751FE4EC040039A4EA /* Sources */,
 				492FEC761FE4EC040039A4EA /* Frameworks */,
 				492FEC771FE4EC040039A4EA /* Resources */,
+				0EBB41EA542DEBBBBF09FCC8 /* [CP] Embed Pods Frameworks */,
+				8DEE564BF01FC78023474EA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 492FEC991FE4EC040039A4EA /* Build configuration list for PBXNativeTarget "MileageCalculatorTests" */;
 			buildPhases = (
+				BF842AF2A7454A9607C61DF1 /* [CP] Check Pods Manifest.lock */,
 				492FEC891FE4EC040039A4EA /* Sources */,
 				492FEC8A1FE4EC040039A4EA /* Frameworks */,
 				492FEC8B1FE4EC040039A4EA /* Resources */,
+				C2B8B49FA6BB40B5378D11D0 /* [CP] Embed Pods Frameworks */,
+				8F1D7BDB0E9FE769C2EB3E1B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,126 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EBB41EA542DEBBBBF09FCC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DEE564BF01FC78023474EA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F1D7BDB0E9FE769C2EB3E1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MileageCalculatorTests/Pods-MileageCalculatorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF842AF2A7454A9607C61DF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MileageCalculatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2B8B49FA6BB40B5378D11D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MileageCalculatorTests/Pods-MileageCalculatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E08B74B9CE65D2D91C3C34A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MileageCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		492FEC751FE4EC040039A4EA /* Sources */ = {
@@ -351,6 +509,7 @@
 		};
 		492FEC971FE4EC040039A4EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70384939CF60EABB44F32A34 /* Pods-MileageCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -367,6 +526,7 @@
 		};
 		492FEC981FE4EC040039A4EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53FF1E6655294765BFAA1721 /* Pods-MileageCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,6 +543,7 @@
 		};
 		492FEC9A1FE4EC040039A4EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D32EE04752828DBACE3B472A /* Pods-MileageCalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -400,6 +561,7 @@
 		};
 		492FEC9B1FE4EC040039A4EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4940EAF0208CB65BAD771CBA /* Pods-MileageCalculatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
