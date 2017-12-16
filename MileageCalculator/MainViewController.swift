@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var goButton: UIButton!
 
+    @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
 
     private let cellID = "locationCell"
@@ -28,7 +29,7 @@ class MainViewController: UIViewController {
 
     private var totalDistance = 0.0 {
         didSet {
-            //
+            distanceLabel.text = "\(totalDistance) miles"
         }
     }
 
@@ -43,6 +44,8 @@ class MainViewController: UIViewController {
         goButton.setTitleColor(.white, for: .normal)
         goButton.roundCorners()
         view.bringSubview(toFront: goButton)
+
+        distanceLabel.textColor = .green
 
         tableView.dataSource = self
         tableView.delegate = self

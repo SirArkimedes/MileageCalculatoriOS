@@ -38,6 +38,7 @@
                                 <rect key="frame" x="0.0" y="54" width="375" height="613"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="locationCell" rowHeight="88" id="rwQ-ie-m5Y" customClass="LocationTableViewCell" customModule="MileageCalculator" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="88"/>
@@ -82,22 +83,31 @@
                                     <constraint firstAttribute="height" constant="54" id="hsL-4k-3JO"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rh0-4n-R0m">
+                                <rect key="frame" x="176.5" y="25" width="22.5" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DFs-cU-R2D" secondAttribute="bottom" id="EBk-h7-7HF"/>
+                            <constraint firstAttribute="bottom" secondItem="DFs-cU-R2D" secondAttribute="bottom" id="EBk-h7-7HF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dd2-Aj-e8z" secondAttribute="trailing" id="Ksz-fg-VOX"/>
+                            <constraint firstItem="Rh0-4n-R0m" firstAttribute="top" secondItem="dd2-Aj-e8z" secondAttribute="bottom" constant="-29" id="Lj6-uu-aGg"/>
                             <constraint firstItem="dd2-Aj-e8z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MQK-DN-mbi"/>
                             <constraint firstItem="Dnb-MQ-D4B" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NND-Rh-gUg"/>
                             <constraint firstItem="DFs-cU-R2D" firstAttribute="top" secondItem="dd2-Aj-e8z" secondAttribute="bottom" id="TKj-GP-Ulu"/>
                             <constraint firstItem="DFs-cU-R2D" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="k56-9J-LEE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="dd2-Aj-e8z" secondAttribute="top" constant="20" id="mCC-W6-Jbc"/>
+                            <constraint firstItem="Rh0-4n-R0m" firstAttribute="centerX" secondItem="dd2-Aj-e8z" secondAttribute="centerX" id="myv-9C-HIn"/>
                             <constraint firstItem="DFs-cU-R2D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s5Y-wB-Vzn"/>
                             <constraint firstItem="Dnb-MQ-D4B" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xtp-DI-ym5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="distanceLabel" destination="Rh0-4n-R0m" id="Ubu-gU-zpn"/>
                         <outlet property="goButton" destination="Dnb-MQ-D4B" id="RzN-cx-A3x"/>
                         <outlet property="tableView" destination="DFs-cU-R2D" id="HKP-Za-Qtf"/>
                     </connections>
