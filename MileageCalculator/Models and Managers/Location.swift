@@ -17,6 +17,8 @@ class Location {
     static let lat = "lat"
     static let lon = "lon"
 
+    var key = ""
+
     var name = ""
     var lat: Double = 0.0
     var lon: Double = 0.0
@@ -42,5 +44,9 @@ class Location {
         }
 
         return self
+    }
+
+    func getDistance(from key: String) -> Double {
+        return distances[key] ?? 0.0
     }
 }

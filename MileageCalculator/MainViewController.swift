@@ -26,6 +26,12 @@ class MainViewController: UIViewController {
 
     private var checkTimer: Timer?
 
+    private var totalDistance = 0.0 {
+        didSet {
+            //
+        }
+    }
+
     // MARK: - View lifecycle
 
     override func viewDidLoad() {
@@ -45,7 +51,9 @@ class MainViewController: UIViewController {
         store.getDocuments { snapshot, error in
             if let documents = snapshot?.documents {
                 for document in documents {
-                    self.locations.append(Location().load(fromDict: document.data()))
+                    let location = Location().load(fromDict: document.data())
+                    location.key = document.documentID
+                    self.locations.append(location)
                 }
             }
         }
@@ -64,12 +72,24 @@ class MainViewController: UIViewController {
                     if LocationManager.manager.compareToLastLocation(location: location.location) {
                         if self.locationOrder.last !== location {
                             self.locationOrder.append(location)
+                            self.totalDistance += self.calculateDistance(from: self.locationOrder.count - 1)
                             self.tableView.reloadData()
                         }
                     }
                 }
             }
         })
+    }
+
+    // MARK: - Helpers
+
+    private func calculateDistance(from index: Int) -> Double {
+        if index == 0 {
+            return 0.0
+        } else {
+            let previousLocation = locationOrder[index - 1]
+            return previousLocation.getDistance(from: locationOrder[index].key)
+        }
     }
 }
 
@@ -91,7 +111,7 @@ extension MainViewController: UITableViewDataSource {
         let location = locationOrder[indexPath.row]
 
         cell.nameLabel.text = location.name
-        cell.distanceLabel.text = "0.0"
+        cell.distanceLabel.text = "\(calculateDistance(from: indexPath.row))"
 
         return cell
     }
